@@ -2,6 +2,8 @@ mean ()
 {
         mkdir -p "$1" &&
         cd "$1"
+        touch package.json
+        echo "{}" >> package.json
         touch server.js
         touch README.md
         mkdir -p server
